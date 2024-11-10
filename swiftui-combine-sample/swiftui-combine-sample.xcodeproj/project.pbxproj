@@ -26,6 +26,7 @@
 		8AB699A22CE12B0E00510F96 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699A12CE12B0E00510F96 /* SplashScreenView.swift */; };
 		8AB699A42CE13ADE00510F96 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB699A32CE13ADE00510F96 /* Launch Screen.storyboard */; };
 		8AB699A62CE13C1300510F96 /* UserDefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699A52CE13C1300510F96 /* UserDefaultsData.swift */; };
+		8AB699A92CE13E4300510F96 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699A82CE13E4300510F96 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		8AB699A12CE12B0E00510F96 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		8AB699A32CE13ADE00510F96 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		8AB699A52CE13C1300510F96 /* UserDefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsData.swift; sourceTree = "<group>"; };
+		8AB699A82CE13E4300510F96 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		8AB699592CE055AA00510F96 /* swiftui-combine-sample */ = {
 			isa = PBXGroup;
 			children = (
+				8AB699A72CE13E3500510F96 /* Home */,
 				8AB699A02CE1286800510F96 /* Model */,
 				8AB699992CE121CE00510F96 /* UI */,
 				8AB699962CE11CB000510F96 /* Network */,
@@ -213,6 +216,14 @@
 				8AB6999D2CE1286600510F96 /* UserDTO.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8AB699A72CE13E3500510F96 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8AB699A82CE13E4300510F96 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +366,7 @@
 			files = (
 				8AB699642CE055AC00510F96 /* Persistence.swift in Sources */,
 				8AB6995D2CE055AA00510F96 /* ContentView.swift in Sources */,
+				8AB699A92CE13E4300510F96 /* HomeView.swift in Sources */,
 				8AB6998D2CE1122A00510F96 /* LoginViewModel.swift in Sources */,
 				8AB699982CE11CBE00510F96 /* NetworkManager.swift in Sources */,
 				8AB699A22CE12B0E00510F96 /* SplashScreenView.swift in Sources */,
