@@ -37,10 +37,8 @@ class LoginViewModel: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.isLoading = false
             if self.email == "test@example.com" && self.password == "password" {
-                // Login bem-sucedido
                 print("Login successful")
             } else {
-                // Falha no login
                 self.loginErrorMessage = "Invalid email or password."
             }
         }

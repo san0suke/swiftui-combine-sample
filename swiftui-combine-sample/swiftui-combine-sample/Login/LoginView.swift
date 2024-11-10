@@ -35,6 +35,13 @@ struct LoginView: View {
                 .cornerRadius(8)
                 .padding(.horizontal, 20)
             
+            if let errorMessage = viewModel.loginErrorMessage {
+                Text(errorMessage)
+                    .foregroundColor(.red)
+                    .font(.subheadline)
+                    .padding(.horizontal, 20)
+            }
+            
             HStack {
                 Text("Remember me")
                     .font(.title3)
@@ -47,31 +54,32 @@ struct LoginView: View {
             }
             
             Button(action: {
-                print("Login with email: \(viewModel.email), password: \(viewModel.password)")
+                viewModel.login()
             }) {
                 Text("Login")
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.blue)
+                    .background(viewModel.isLoginButtonEnabled ? Color.blue : Color.gray)
                     .cornerRadius(8)
                     .padding(.horizontal, 20)
             }
+            .disabled(!viewModel.isLoginButtonEnabled)
             
             Text("OR")
                 .font(.title2)
                 .fontWeight(.bold)
             
             Button(action: {
-                print("Login as guest")
+                viewModel.loginAsGuest()
             }) {
                 Text("Enter as guest")
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.gray)
+                    .background(Color.teal)
                     .cornerRadius(8)
                     .padding(.horizontal, 20)
             }
