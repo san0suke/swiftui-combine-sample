@@ -29,10 +29,6 @@ class LoginViewModel: ObservableObject {
         self.networkManager = networkManager
         self.userDefaultData = userDefaultData
         
-        email = "newuser2@domain.com"
-        password = "password1234"
-//        password = "password12346" //wrong password
-        
         Publishers.CombineLatest($email, $password)
             .map { email, password in
                 return !email.isEmpty && !password.isEmpty && email.contains("@")
