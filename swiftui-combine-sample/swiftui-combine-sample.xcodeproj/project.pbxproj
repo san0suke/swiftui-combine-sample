@@ -25,6 +25,7 @@
 		8AB6999F2CE1286600510F96 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6999D2CE1286600510F96 /* UserDTO.swift */; };
 		8AB699A22CE12B0E00510F96 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699A12CE12B0E00510F96 /* SplashScreenView.swift */; };
 		8AB699A42CE13ADE00510F96 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB699A32CE13ADE00510F96 /* Launch Screen.storyboard */; };
+		8AB699A62CE13C1300510F96 /* UserDefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699A52CE13C1300510F96 /* UserDefaultsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		8AB6999D2CE1286600510F96 /* UserDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 		8AB699A12CE12B0E00510F96 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		8AB699A32CE13ADE00510F96 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8AB699A52CE13C1300510F96 /* UserDefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			children = (
 				8AB6998A2CE0677000510F96 /* LoginView.swift */,
 				8AB6998C2CE1122A00510F96 /* LoginViewModel.swift */,
+				8AB699A52CE13C1300510F96 /* UserDefaultsData.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				8AB699982CE11CBE00510F96 /* NetworkManager.swift in Sources */,
 				8AB699A22CE12B0E00510F96 /* SplashScreenView.swift in Sources */,
 				8AB6995B2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift in Sources */,
+				8AB699A62CE13C1300510F96 /* UserDefaultsData.swift in Sources */,
 				8AB6999E2CE1286600510F96 /* LoginResponseDTO.swift in Sources */,
 				8AB6999B2CE121D800510F96 /* LoadingView.swift in Sources */,
 				8AB6998B2CE0677000510F96 /* LoginView.swift in Sources */,

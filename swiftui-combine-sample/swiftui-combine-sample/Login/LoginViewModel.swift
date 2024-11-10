@@ -21,9 +21,12 @@ class LoginViewModel: ObservableObject {
     
     private let networkManager: NetworkManager
     private var cancellables = Set<AnyCancellable>()
+    private let userDefaultData: UserDefaultsData
     
-    init(networkManager: NetworkManager = NetworkManager.shared) {
+    init(networkManager: NetworkManager = NetworkManager.shared,
+         userDefaultData: UserDefaultsData = UserDefaultsData()) {
         self.networkManager = networkManager
+        self.userDefaultData = userDefaultData
         
         email = "newuser2@domain.com"
         password = "password1234"
@@ -49,7 +52,9 @@ class LoginViewModel: ObservableObject {
         
         networkManager.postRequest(url: "http://localhost:7071/api/LoginFunction", parameters: parameters) { (result: Result<LoginResponseDTO, AFError>) in
             self.isLoading = false
-            print(result)
+            
+            self.userDefaultData.userData = try? result.get()
+            self.userDefaultData.rememberMe = self.rememberMe
         }
     }
     
