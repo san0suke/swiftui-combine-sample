@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8AB6995B2CE055AA00510F96 /* swiftui_combine_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6995A2CE055AA00510F96 /* swiftui_combine_sampleApp.swift */; };
+		8AB6995B2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6995A2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift */; };
 		8AB6995D2CE055AA00510F96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6995C2CE055AA00510F96 /* ContentView.swift */; };
 		8AB6995F2CE055AC00510F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB6995E2CE055AC00510F96 /* Assets.xcassets */; };
 		8AB699622CE055AC00510F96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB699612CE055AC00510F96 /* Preview Assets.xcassets */; };
@@ -16,6 +16,8 @@
 		8AB699712CE055AC00510F96 /* swiftui_combine_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699702CE055AC00510F96 /* swiftui_combine_sampleTests.swift */; };
 		8AB6997B2CE055AC00510F96 /* swiftui_combine_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6997A2CE055AC00510F96 /* swiftui_combine_sampleUITests.swift */; };
 		8AB6997D2CE055AC00510F96 /* swiftui_combine_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6997C2CE055AC00510F96 /* swiftui_combine_sampleUITestsLaunchTests.swift */; };
+		8AB6998B2CE0677000510F96 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6998A2CE0677000510F96 /* LoginView.swift */; };
+		8AB6998D2CE1122A00510F96 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6998C2CE1122A00510F96 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		8AB699572CE055AA00510F96 /* swiftui-combine-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-combine-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AB6995A2CE055AA00510F96 /* swiftui_combine_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_combine_sampleApp.swift; sourceTree = "<group>"; };
+		8AB6995A2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiCombineSampleApp.swift; sourceTree = "<group>"; };
 		8AB6995C2CE055AA00510F96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8AB6995E2CE055AC00510F96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AB699612CE055AC00510F96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		8AB699762CE055AC00510F96 /* swiftui-combine-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-combine-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB6997A2CE055AC00510F96 /* swiftui_combine_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_combine_sampleUITests.swift; sourceTree = "<group>"; };
 		8AB6997C2CE055AC00510F96 /* swiftui_combine_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_combine_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AB6998A2CE0677000510F96 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8AB6998C2CE1122A00510F96 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,8 @@
 		8AB699592CE055AA00510F96 /* swiftui-combine-sample */ = {
 			isa = PBXGroup;
 			children = (
-				8AB6995A2CE055AA00510F96 /* swiftui_combine_sampleApp.swift */,
+				8AB699892CE0676800510F96 /* Login */,
+				8AB6995A2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift */,
 				8AB6995C2CE055AA00510F96 /* ContentView.swift */,
 				8AB6995E2CE055AC00510F96 /* Assets.xcassets */,
 				8AB699632CE055AC00510F96 /* Persistence.swift */,
@@ -131,6 +136,15 @@
 				8AB6997C2CE055AC00510F96 /* swiftui_combine_sampleUITestsLaunchTests.swift */,
 			);
 			path = "swiftui-combine-sampleUITests";
+			sourceTree = "<group>";
+		};
+		8AB699892CE0676800510F96 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6998A2CE0677000510F96 /* LoginView.swift */,
+				8AB6998C2CE1122A00510F96 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +279,9 @@
 			files = (
 				8AB699642CE055AC00510F96 /* Persistence.swift in Sources */,
 				8AB6995D2CE055AA00510F96 /* ContentView.swift in Sources */,
-				8AB6995B2CE055AA00510F96 /* swiftui_combine_sampleApp.swift in Sources */,
+				8AB6998D2CE1122A00510F96 /* LoginViewModel.swift in Sources */,
+				8AB6995B2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift in Sources */,
+				8AB6998B2CE0677000510F96 /* LoginView.swift in Sources */,
 				8AB699672CE055AC00510F96 /* swiftui_combine_sample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
