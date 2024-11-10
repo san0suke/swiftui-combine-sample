@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct LobbyView: View {
+    
     var body: some View {
-        Text("LobbyView")
+        VStack {
+            StatusBarView()
+            
+            ZStack {
+                Rectangle()
+                    .fill(Color.white)
+                    .border(Color.black, width: 2)
+//                    .onTapGesture {
+//                        tapCountManager.incrementTap()
+//                    }
+
+                Text("Tap me!")
+                    .font(.system(size: 32, weight: .bold))
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
     }
 }
 

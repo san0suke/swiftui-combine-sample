@@ -30,6 +30,7 @@
 		8AB699AB2CE1445900510F96 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699AA2CE1445900510F96 /* HomeViewModel.swift */; };
 		8AB699AE2CE1458E00510F96 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699AD2CE1458E00510F96 /* StoreView.swift */; };
 		8AB699B12CE145A800510F96 /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699B02CE145A800510F96 /* LobbyView.swift */; };
+		8AB699C22CE1491200510F96 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699C12CE1491200510F96 /* StatusBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		8AB699AA2CE1445900510F96 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8AB699AD2CE1458E00510F96 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		8AB699B02CE145A800510F96 /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
+		8AB699C12CE1491200510F96 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		8AB699592CE055AA00510F96 /* swiftui-combine-sample */ = {
 			isa = PBXGroup;
 			children = (
+				8AB699C02CE148FF00510F96 /* Components */,
 				8AB699AF2CE1459C00510F96 /* Lobby */,
 				8AB699AC2CE1458200510F96 /* Store */,
 				8AB699A72CE13E3500510F96 /* Home */,
@@ -249,6 +252,14 @@
 				8AB699B02CE145A800510F96 /* LobbyView.swift */,
 			);
 			path = Lobby;
+			sourceTree = "<group>";
+		};
+		8AB699C02CE148FF00510F96 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8AB699C12CE1491200510F96 /* StatusBarView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +406,7 @@
 				8AB6998D2CE1122A00510F96 /* LoginViewModel.swift in Sources */,
 				8AB699982CE11CBE00510F96 /* NetworkManager.swift in Sources */,
 				8AB699A22CE12B0E00510F96 /* SplashScreenView.swift in Sources */,
+				8AB699C22CE1491200510F96 /* StatusBarView.swift in Sources */,
 				8AB6995B2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift in Sources */,
 				8AB699A62CE13C1300510F96 /* UserDefaultsData.swift in Sources */,
 				8AB6999E2CE1286600510F96 /* LoginResponseDTO.swift in Sources */,
