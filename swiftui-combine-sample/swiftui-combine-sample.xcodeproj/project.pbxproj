@@ -18,6 +18,10 @@
 		8AB6997D2CE055AC00510F96 /* swiftui_combine_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6997C2CE055AC00510F96 /* swiftui_combine_sampleUITestsLaunchTests.swift */; };
 		8AB6998B2CE0677000510F96 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6998A2CE0677000510F96 /* LoginView.swift */; };
 		8AB6998D2CE1122A00510F96 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6998C2CE1122A00510F96 /* LoginViewModel.swift */; };
+		8AB699912CE11B7500510F96 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB699902CE11B7500510F96 /* Alamofire */; };
+		8AB699932CE11B7500510F96 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB699922CE11B7500510F96 /* AlamofireDynamic */; };
+		8AB699942CE11B7500510F96 /* AlamofireDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 8AB699922CE11B7500510F96 /* AlamofireDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8AB699982CE11CBE00510F96 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699972CE11CBE00510F96 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8AB699952CE11B7500510F96 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8AB699942CE11B7500510F96 /* AlamofireDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8AB699572CE055AA00510F96 /* swiftui-combine-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-combine-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB6995A2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiCombineSampleApp.swift; sourceTree = "<group>"; };
@@ -52,6 +70,7 @@
 		8AB6997C2CE055AC00510F96 /* swiftui_combine_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_combine_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8AB6998A2CE0677000510F96 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8AB6998C2CE1122A00510F96 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8AB699972CE11CBE00510F96 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB699912CE11B7500510F96 /* Alamofire in Frameworks */,
+				8AB699932CE11B7500510F96 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +107,7 @@
 				8AB6996F2CE055AC00510F96 /* swiftui-combine-sampleTests */,
 				8AB699792CE055AC00510F96 /* swiftui-combine-sampleUITests */,
 				8AB699582CE055AA00510F96 /* Products */,
+				8AB6998F2CE11B7500510F96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +124,7 @@
 		8AB699592CE055AA00510F96 /* swiftui-combine-sample */ = {
 			isa = PBXGroup;
 			children = (
+				8AB699962CE11CB000510F96 /* Network */,
 				8AB699892CE0676800510F96 /* Login */,
 				8AB6995A2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift */,
 				8AB6995C2CE055AA00510F96 /* ContentView.swift */,
@@ -147,6 +170,21 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		8AB6998F2CE11B7500510F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AB699962CE11CB000510F96 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8AB699972CE11CBE00510F96 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,12 +195,17 @@
 				8AB699532CE055AA00510F96 /* Sources */,
 				8AB699542CE055AA00510F96 /* Frameworks */,
 				8AB699552CE055AA00510F96 /* Resources */,
+				8AB699952CE11B7500510F96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "swiftui-combine-sample";
+			packageProductDependencies = (
+				8AB699902CE11B7500510F96 /* Alamofire */,
+				8AB699922CE11B7500510F96 /* AlamofireDynamic */,
+			);
 			productName = "swiftui-combine-sample";
 			productReference = 8AB699572CE055AA00510F96 /* swiftui-combine-sample.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +278,9 @@
 				Base,
 			);
 			mainGroup = 8AB6994E2CE055AA00510F96;
+			packageReferences = (
+				8AB6998E2CE11B4500510F96 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 8AB699582CE055AA00510F96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +326,7 @@
 				8AB699642CE055AC00510F96 /* Persistence.swift in Sources */,
 				8AB6995D2CE055AA00510F96 /* ContentView.swift in Sources */,
 				8AB6998D2CE1122A00510F96 /* LoginViewModel.swift in Sources */,
+				8AB699982CE11CBE00510F96 /* NetworkManager.swift in Sources */,
 				8AB6995B2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift in Sources */,
 				8AB6998B2CE0677000510F96 /* LoginView.swift in Sources */,
 				8AB699672CE055AC00510F96 /* swiftui_combine_sample.xcdatamodeld in Sources */,
@@ -612,6 +659,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AB6998E2CE11B4500510F96 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AB699902CE11B7500510F96 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AB6998E2CE11B4500510F96 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8AB699922CE11B7500510F96 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AB6998E2CE11B4500510F96 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8AB699652CE055AC00510F96 /* swiftui_combine_sample.xcdatamodeld */ = {
