@@ -18,9 +18,17 @@ class LoginViewModel: ObservableObject {
     @Published var loginErrorMessage: String?
     @Published var isLoading: Bool = false
     
+    private let networkManager: NetworkManager
     private var cancellables = Set<AnyCancellable>()
     
-    init() {
+    init(networkManager: NetworkManager = NetworkManager.shared) {
+        self.networkManager = networkManager
+        
+        email = "newuser2@domain.com"
+        password = "password1234"
+//        password = "password12346" //wrong password
+
+        
         Publishers.CombineLatest($email, $password)
             .map { email, password in
                 return !email.isEmpty && !password.isEmpty && email.contains("@")
