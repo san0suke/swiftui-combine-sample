@@ -21,6 +21,8 @@
 		8AB699912CE11B7500510F96 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB699902CE11B7500510F96 /* Alamofire */; };
 		8AB699982CE11CBE00510F96 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699972CE11CBE00510F96 /* NetworkManager.swift */; };
 		8AB6999B2CE121D800510F96 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6999A2CE121D800510F96 /* LoadingView.swift */; };
+		8AB6999E2CE1286600510F96 /* LoginResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6999C2CE1286600510F96 /* LoginResponseDTO.swift */; };
+		8AB6999F2CE1286600510F96 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6999D2CE1286600510F96 /* UserDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		8AB6998C2CE1122A00510F96 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8AB699972CE11CBE00510F96 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8AB6999A2CE121D800510F96 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8AB6999C2CE1286600510F96 /* LoginResponseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponseDTO.swift; sourceTree = "<group>"; };
+		8AB6999D2CE1286600510F96 /* UserDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 		8AB699592CE055AA00510F96 /* swiftui-combine-sample */ = {
 			isa = PBXGroup;
 			children = (
+				8AB699A02CE1286800510F96 /* Model */,
 				8AB699992CE121CE00510F96 /* UI */,
 				8AB699962CE11CB000510F96 /* Network */,
 				8AB699892CE0676800510F96 /* Login */,
@@ -190,6 +195,15 @@
 				8AB6999A2CE121D800510F96 /* LoadingView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		8AB699A02CE1286800510F96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6999C2CE1286600510F96 /* LoginResponseDTO.swift */,
+				8AB6999D2CE1286600510F96 /* UserDTO.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,8 +348,10 @@
 				8AB6998D2CE1122A00510F96 /* LoginViewModel.swift in Sources */,
 				8AB699982CE11CBE00510F96 /* NetworkManager.swift in Sources */,
 				8AB6995B2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift in Sources */,
+				8AB6999E2CE1286600510F96 /* LoginResponseDTO.swift in Sources */,
 				8AB6999B2CE121D800510F96 /* LoadingView.swift in Sources */,
 				8AB6998B2CE0677000510F96 /* LoginView.swift in Sources */,
+				8AB6999F2CE1286600510F96 /* UserDTO.swift in Sources */,
 				8AB699672CE055AC00510F96 /* swiftui_combine_sample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

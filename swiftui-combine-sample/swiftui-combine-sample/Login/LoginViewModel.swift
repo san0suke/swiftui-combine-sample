@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Alamofire
 
 class LoginViewModel: ObservableObject {
     
@@ -27,7 +28,6 @@ class LoginViewModel: ObservableObject {
         email = "newuser2@domain.com"
         password = "password1234"
 //        password = "password12346" //wrong password
-
         
         Publishers.CombineLatest($email, $password)
             .map { email, password in
@@ -39,16 +39,17 @@ class LoginViewModel: ObservableObject {
     func login() {
         guard isLoginButtonEnabled else { return }
         
+        let parameters: [String: Any] = [
+            "email": email,
+            "password": password
+        ]
+        
         isLoading = true
         loginErrorMessage = nil
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        networkManager.postRequest(url: "http://localhost:7071/api/LoginFunction", parameters: parameters) { (result: Result<LoginResponseDTO, AFError>) in
             self.isLoading = false
-            if self.email == "test@example.com" && self.password == "password" {
-                print("Login successful")
-            } else {
-                self.loginErrorMessage = "Invalid email or password."
-            }
+            print(result)
         }
     }
     
