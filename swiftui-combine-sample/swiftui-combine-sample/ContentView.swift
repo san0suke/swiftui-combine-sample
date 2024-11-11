@@ -11,11 +11,13 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @StateObject private var loginViewModel = LoginViewModel()
+    @StateObject private var appManager = AppManager()
 
     var body: some View {
         NavigationView {
             if loginViewModel.isLoggedIn {
                 HomeView()
+                    .environmentObject(appManager)
             } else {
                 LoginView(viewModel: loginViewModel)
             }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var viewModel = HomeViewModel()
     @State private var selectedTab = 1
+    @EnvironmentObject var appManager: AppManager
 
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -18,16 +18,17 @@ struct HomeView: View {
                     Label("Store", systemImage: "storefront")
                 }
                 .tag(0)
-
+            
             LobbyView()
                 .tabItem {
                     Label("Lobby", systemImage: "house")
                 }
                 .tag(1)
+            
         }
         .onAppear {
-//            viewModel.startTapFactory()
             selectedTab = 1
+            appManager.startTapIncrementLoop()
         }
     }
 }

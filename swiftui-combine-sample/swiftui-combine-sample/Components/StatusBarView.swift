@@ -9,8 +9,10 @@ import SwiftUI
 
 struct StatusBarView: View {
     
+    @EnvironmentObject var appManager: AppManager
+    
     var body: some View {
-        Text("Taps: 0")
+        Text("Taps: \(appManager.tapCount)")
             .font(.system(size: 16, weight: .medium))
             .frame(maxWidth: .infinity)
             .padding()

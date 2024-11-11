@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LobbyView: View {
     
+    @EnvironmentObject var appManager: AppManager
+    
     var body: some View {
         VStack {
             StatusBarView()
@@ -17,9 +19,9 @@ struct LobbyView: View {
                 Rectangle()
                     .fill(Color.white)
                     .border(Color.black, width: 2)
-//                    .onTapGesture {
-//                        tapCountManager.incrementTap()
-//                    }
+                    .onTapGesture {
+                        appManager.incrementTap()
+                    }
 
                 Text("Tap me!")
                     .font(.system(size: 32, weight: .bold))

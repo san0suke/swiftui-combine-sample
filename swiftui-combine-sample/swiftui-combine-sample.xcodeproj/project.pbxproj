@@ -27,10 +27,10 @@
 		8AB699A42CE13ADE00510F96 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB699A32CE13ADE00510F96 /* Launch Screen.storyboard */; };
 		8AB699A62CE13C1300510F96 /* UserDefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699A52CE13C1300510F96 /* UserDefaultsData.swift */; };
 		8AB699A92CE13E4300510F96 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699A82CE13E4300510F96 /* HomeView.swift */; };
-		8AB699AB2CE1445900510F96 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699AA2CE1445900510F96 /* HomeViewModel.swift */; };
 		8AB699AE2CE1458E00510F96 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699AD2CE1458E00510F96 /* StoreView.swift */; };
 		8AB699B12CE145A800510F96 /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699B02CE145A800510F96 /* LobbyView.swift */; };
 		8AB699C22CE1491200510F96 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699C12CE1491200510F96 /* StatusBarView.swift */; };
+		8AB699C52CE1700200510F96 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699C42CE1700200510F96 /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,10 +86,10 @@
 		8AB699A32CE13ADE00510F96 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		8AB699A52CE13C1300510F96 /* UserDefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsData.swift; sourceTree = "<group>"; };
 		8AB699A82CE13E4300510F96 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		8AB699AA2CE1445900510F96 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		8AB699AD2CE1458E00510F96 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		8AB699B02CE145A800510F96 /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
 		8AB699C12CE1491200510F96 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		8AB699C42CE1700200510F96 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +142,7 @@
 		8AB699592CE055AA00510F96 /* swiftui-combine-sample */ = {
 			isa = PBXGroup;
 			children = (
+				8AB699C32CE16FF000510F96 /* Managers */,
 				8AB699C02CE148FF00510F96 /* Components */,
 				8AB699AF2CE1459C00510F96 /* Lobby */,
 				8AB699AC2CE1458200510F96 /* Store */,
@@ -233,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				8AB699A82CE13E4300510F96 /* HomeView.swift */,
-				8AB699AA2CE1445900510F96 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -260,6 +260,14 @@
 				8AB699C12CE1491200510F96 /* StatusBarView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		8AB699C32CE16FF000510F96 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8AB699C42CE1700200510F96 /* AppManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,11 +418,11 @@
 				8AB6995B2CE055AA00510F96 /* SwiftuiCombineSampleApp.swift in Sources */,
 				8AB699A62CE13C1300510F96 /* UserDefaultsData.swift in Sources */,
 				8AB6999E2CE1286600510F96 /* LoginResponseDTO.swift in Sources */,
-				8AB699AB2CE1445900510F96 /* HomeViewModel.swift in Sources */,
 				8AB6999B2CE121D800510F96 /* LoadingView.swift in Sources */,
 				8AB6998B2CE0677000510F96 /* LoginView.swift in Sources */,
 				8AB6999F2CE1286600510F96 /* UserDTO.swift in Sources */,
 				8AB699B12CE145A800510F96 /* LobbyView.swift in Sources */,
+				8AB699C52CE1700200510F96 /* AppManager.swift in Sources */,
 				8AB699AE2CE1458E00510F96 /* StoreView.swift in Sources */,
 				8AB699672CE055AC00510F96 /* swiftui_combine_sample.xcdatamodeld in Sources */,
 			);
