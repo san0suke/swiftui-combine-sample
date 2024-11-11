@@ -40,6 +40,11 @@ class AppManager: ObservableObject {
         saveTapCount()
     }
     
+    func decreaseTap(_ count: Int) {
+        tapCount -= count
+        saveTapCount()
+    }
+    
     func startTapIncrementLoop() {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(factoryTapIncrease), userInfo: nil, repeats: true)
     }
@@ -47,6 +52,16 @@ class AppManager: ObservableObject {
     func stopTapIncrementLoop() {
         timer?.invalidate()
         timer = nil
+    }
+    
+    func increasePerTap(_ count: Int) {
+        increasePerTap += count
+        UserDefaults.standard.set(increasePerTap, forKey: increasePerTapKey)
+    }
+    
+    func increaseFactoryTap(_ count: Int) {
+        factoryIncreaseTap += count
+        UserDefaults.standard.set(factoryIncreaseTap, forKey: factoryIncreaseTapKey)
     }
     
     private func saveTapCount() {

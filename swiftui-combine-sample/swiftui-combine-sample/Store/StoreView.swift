@@ -9,8 +9,11 @@ import SwiftUI
 
 struct StoreView: View {
     
-    @EnvironmentObject var appManager: AppManager
-    @ObservedObject var viewModel = StoreViewModel()
+    @ObservedObject var viewModel: StoreViewModel
+    
+    init(appManager: AppManager) {
+        _viewModel = ObservedObject(wrappedValue: StoreViewModel(appManager: appManager))
+    }
     
     var body: some View {
         VStack(spacing: 0) {
@@ -18,16 +21,17 @@ struct StoreView: View {
             
             List(viewModel.items) { item in
                 StoreLineView(item: item, canBuy: viewModel.canBuy(item))
+                    .onTapGesture {
+                        viewModel.storeItemPressed(item)
+                    }
                     .listRowBackground(Color.white)
             }
+            .id(viewModel.reloadList)
         }
         .padding(.bottom)
-        .onAppear {
-            viewModel.appManager = appManager
-        }
     }
 }
 
 #Preview {
-    StoreView()
+    StoreView(appManager: AppManager())
 }

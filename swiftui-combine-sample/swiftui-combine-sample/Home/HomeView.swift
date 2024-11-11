@@ -13,7 +13,7 @@ struct HomeView: View {
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            StoreView()
+            StoreView(appManager: appManager)
                 .tabItem {
                     Label("Store", systemImage: "storefront")
                 }
