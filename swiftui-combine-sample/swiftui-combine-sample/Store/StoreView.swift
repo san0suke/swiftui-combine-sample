@@ -11,7 +11,6 @@ struct StoreView: View {
     
     @ObservedObject var viewModel: StoreViewModel
     @State var showWinDialog: Bool = false
-    @State private var showingAlert = false
     
     init(appManager: AppManager) {
         _viewModel = ObservedObject(wrappedValue: StoreViewModel(appManager: appManager))
