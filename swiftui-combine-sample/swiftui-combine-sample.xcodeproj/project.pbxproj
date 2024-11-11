@@ -31,6 +31,11 @@
 		8AB699B12CE145A800510F96 /* LobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699B02CE145A800510F96 /* LobbyView.swift */; };
 		8AB699C22CE1491200510F96 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699C12CE1491200510F96 /* StatusBarView.swift */; };
 		8AB699C52CE1700200510F96 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699C42CE1700200510F96 /* AppManager.swift */; };
+		8AB699C72CE1816500510F96 /* StoreLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699C62CE1816500510F96 /* StoreLineView.swift */; };
+		8AB699C92CE181AF00510F96 /* StoreItemEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699C82CE181AF00510F96 /* StoreItemEnum.swift */; };
+		8AB699CB2CE181D500510F96 /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699CA2CE181D400510F96 /* StoreItem.swift */; };
+		8AB699CD2CE181DF00510F96 /* StoreItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699CC2CE181DF00510F96 /* StoreItemList.swift */; };
+		8AB699CF2CE184CC00510F96 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB699CE2CE184CC00510F96 /* StoreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,11 @@
 		8AB699B02CE145A800510F96 /* LobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyView.swift; sourceTree = "<group>"; };
 		8AB699C12CE1491200510F96 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 		8AB699C42CE1700200510F96 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		8AB699C62CE1816500510F96 /* StoreLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreLineView.swift; sourceTree = "<group>"; };
+		8AB699C82CE181AF00510F96 /* StoreItemEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemEnum.swift; sourceTree = "<group>"; };
+		8AB699CA2CE181D400510F96 /* StoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItem.swift; sourceTree = "<group>"; };
+		8AB699CC2CE181DF00510F96 /* StoreItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemList.swift; sourceTree = "<group>"; };
+		8AB699CE2CE184CC00510F96 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +252,11 @@
 			isa = PBXGroup;
 			children = (
 				8AB699AD2CE1458E00510F96 /* StoreView.swift */,
+				8AB699C62CE1816500510F96 /* StoreLineView.swift */,
+				8AB699C82CE181AF00510F96 /* StoreItemEnum.swift */,
+				8AB699CA2CE181D400510F96 /* StoreItem.swift */,
+				8AB699CC2CE181DF00510F96 /* StoreItemList.swift */,
+				8AB699CE2CE184CC00510F96 /* StoreViewModel.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -408,10 +423,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB699C92CE181AF00510F96 /* StoreItemEnum.swift in Sources */,
+				8AB699C72CE1816500510F96 /* StoreLineView.swift in Sources */,
 				8AB699642CE055AC00510F96 /* Persistence.swift in Sources */,
 				8AB6995D2CE055AA00510F96 /* ContentView.swift in Sources */,
 				8AB699A92CE13E4300510F96 /* HomeView.swift in Sources */,
 				8AB6998D2CE1122A00510F96 /* LoginViewModel.swift in Sources */,
+				8AB699CB2CE181D500510F96 /* StoreItem.swift in Sources */,
 				8AB699982CE11CBE00510F96 /* NetworkManager.swift in Sources */,
 				8AB699A22CE12B0E00510F96 /* SplashScreenView.swift in Sources */,
 				8AB699C22CE1491200510F96 /* StatusBarView.swift in Sources */,
@@ -423,7 +441,9 @@
 				8AB6999F2CE1286600510F96 /* UserDTO.swift in Sources */,
 				8AB699B12CE145A800510F96 /* LobbyView.swift in Sources */,
 				8AB699C52CE1700200510F96 /* AppManager.swift in Sources */,
+				8AB699CD2CE181DF00510F96 /* StoreItemList.swift in Sources */,
 				8AB699AE2CE1458E00510F96 /* StoreView.swift in Sources */,
+				8AB699CF2CE184CC00510F96 /* StoreViewModel.swift in Sources */,
 				8AB699672CE055AC00510F96 /* swiftui_combine_sample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
