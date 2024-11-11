@@ -19,6 +19,8 @@ struct StoreItem: Identifiable {
         switch itemEnum {
         case .FisrtPlusTap, .SecondPlusTap, .ThirdPlusTap:
             return "+\(increaseTap) taps per tap"
+        case .Victory:
+            return "Win the game"
         default:
             return "+\(increaseFactoryTap) taps/second tap factory"
         }

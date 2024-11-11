@@ -9,17 +9,21 @@ import SwiftUI
 
 struct StoreView: View {
     
+    @EnvironmentObject var appManager: AppManager
     @ObservedObject var viewModel = StoreViewModel()
-    private let itemList = StoreItemList()
     
     var body: some View {
         VStack(spacing: 0) {
             StatusBarView()
             
-            List(itemList.items) { item in
-//                StoreItemList(item: item, canBuy: viewModel.canBuy(item))
-//                    .listRowBackground(Color.white)
+            List(viewModel.items) { item in
+                StoreLineView(item: item, canBuy: viewModel.canBuy(item))
+                    .listRowBackground(Color.white)
             }
+        }
+        .padding(.bottom)
+        .onAppear {
+            viewModel.appManager = appManager
         }
     }
 }

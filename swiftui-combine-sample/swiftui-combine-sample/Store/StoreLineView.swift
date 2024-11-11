@@ -8,25 +8,24 @@
 import SwiftUI
 
 struct StoreLineView: View {
+    
     let item: StoreItem
     let canBuy: Bool
 
     var body: some View {
         HStack {
             Image(systemName: item.iconName)
-                .resizable()
-                .frame(width: 40, height: 40)
-                .padding()
+                .frame(width: 50, height: 50)
+                .padding(.trailing)
 
-            VStack(alignment: .leading) {
-                Text(item.name)
-                    .font(.headline)
-                Text("\(item.price) Taps")
-                    .font(.subheadline)
-            }
+            Text(item.name)
+                .font(.headline)
+            
             Spacer()
+            
+            Text("\(item.price) Taps")
+                .font(.subheadline)
         }
-        .padding()
         .background(Color.white)
         .opacity(canBuy ? 1.0 : 0.5)
         .disabled(!canBuy)
