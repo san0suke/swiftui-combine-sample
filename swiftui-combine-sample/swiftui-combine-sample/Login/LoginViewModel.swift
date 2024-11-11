@@ -21,7 +21,6 @@ class LoginViewModel: ObservableObject {
     @Published var isLoggedIn: Bool = false
     
     private let networkManager: NetworkManager
-    private var cancellables = Set<AnyCancellable>()
     private let userDefaultData: UserDefaultsData
     
     init(networkManager: NetworkManager = NetworkManager.shared,
