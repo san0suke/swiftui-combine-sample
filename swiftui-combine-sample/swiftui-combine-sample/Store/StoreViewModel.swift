@@ -10,6 +10,7 @@ import Foundation
 class StoreViewModel: ObservableObject {
     
     @Published var reloadList: Bool = false
+    @Published var showWinDialog: Bool = false
     private(set) var appManager: AppManager
     
     let items: [StoreItem] = [
@@ -41,8 +42,11 @@ class StoreViewModel: ObservableObject {
         appManager.increaseFactoryTap(item.increaseFactoryTap)
         
         reloadList.toggle()
-//        if appManager?.checkWinCondition() ?? false {
-//            
-//        }
+        
+        showWinDialog = item.itemEnum == .Victory
+    }
+    
+    func resetWinDialog() {
+        showWinDialog = false
     }
 }
